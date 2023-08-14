@@ -34,6 +34,7 @@ Employee.prototype.calculateSalaryBasedOnLevel = function (){
             this.calculateSalary(500, 1000);
         }
     };
+
 Employee.prototype.calculateSalary = function (min, max) {
     this.salary = Math.floor(Math.random() * (max - min + 1) + min);
     this.calculateNetSalary();
@@ -75,6 +76,7 @@ function submitHandler(event)
     saveData();
     event.target.reset();
  }
+
  getData();
 
  function saveData()
@@ -110,8 +112,5 @@ function submitHandler(event)
             newEmployee.renderEmployee();
             /* Allemployees.push(newEmployee); */
         }
-        
     }
-    
  }
- 
